@@ -1,4 +1,4 @@
-package practice;
+package practice.practice4;
 
 public class Practice4_4 {
 	public static void main(String[] args) {
@@ -13,7 +13,4 @@ public class Practice4_4 {
 		}
 		System.out.println("ゲーム終了");
 	}
-	
-	
-
 }

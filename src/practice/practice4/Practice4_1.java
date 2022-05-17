@@ -1,4 +1,4 @@
-package practice;
+package practice.practice4;
 
 public class Practice4_1 {
 	int[] points = new int [4];
