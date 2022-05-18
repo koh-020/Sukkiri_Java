@@ -1,4 +1,4 @@
-package example;
+package example.example5;
 
 public class Example5_13 {
 	public static void incArray(int[] array) {

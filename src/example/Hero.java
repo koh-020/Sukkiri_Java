@@ -1,4 +1,4 @@
-package example.example8;
+package example;
 
 public class Hero {
 	String name;
@@ -8,6 +8,16 @@ public class Hero {
 		this.hp = 100;
 		System.out.println(this.name + "は眠って回復した！");
 	}
+	
+	public Hero(String name) {
+		this.hp = 100;
+		this.name = name;
+	}
+	
+	public Hero() {
+		this("ダミー");
+	}
+	
 	public void sit(int sec) {
 		this.hp += sec;
 		System.out.println(this.name + "は" + sec + "秒座った");

@@ -1,4 +1,4 @@
-package example.example8;
+package example;
 
 public class Matango {
 	int hp;
