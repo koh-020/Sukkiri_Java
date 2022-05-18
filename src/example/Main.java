@@ -1,6 +1,6 @@
 package example;
 
-public class Main {
+public final class Main {
 	public static void main(String[] args) {
 		Hero h1 = new Hero("ミナト");
 		System.out.println(h1.name + h1.hp);
@@ -8,6 +8,9 @@ public class Main {
 		Hero h2 = new Hero();
 //		h2.name = "アサカ";
 		h2.hp = 100;
+		
+		SuperHero sh = new SuperHero();
+		sh.run();
 		
 		Wizard w = new Wizard();
 		w.name = "スガワラ";
@@ -20,13 +23,12 @@ public class Main {
 		System.out.println("シーフの" + t.name + "が仲間になった！");
 		System.out.println("HP:" + t.hp + "　MP：" + t.mp);
 		
-		Matango m1 = new Matango();
-		m1.hp = 50;
-		m1.suffix = 'A';
+		Matango m1 = new Matango('A');
 		
-		Matango m2 = new Matango();
-		m2.hp = 48;
-		m2.suffix = 'B';
+		Matango m2 = new Matango('B');
+		
+		PoisonMatango pm = new PoisonMatango('A');
+		System.out.println("毒キノコ" + pm.suffix + "が現れた！");
 		
 		System.out.println("勇者" + h1.name + "を生み出しました！");
 		
