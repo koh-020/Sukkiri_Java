@@ -11,4 +11,7 @@ public final class A extends Y {
 		System.out.println("Ac");
 	}
 	
+	public A() {
+		
+	}
 }

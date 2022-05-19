@@ -13,10 +13,14 @@ public class PoisonMatango extends Matango{
 		super.attack(h);
 		if (this.limit > 0) {
 			System.out.println("さらに毒の奉仕をばらまいた！");
-			int damage = (h.hp / 5);
-			h.hp -= damage;
-			System.out.println( damage + "ポイントのダメージ！");
+			int damagePoint = (h.getHp() / 5);
+			damage(h, damagePoint);
+			System.out.println( damagePoint + "ポイントのダメージ！");
 			this.limit --;
 		}
+	}
+	
+	public void damage(Hero h, int damage) {
+		h.setHp(h.getHp() - damage);
 	}
 }
