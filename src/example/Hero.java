@@ -3,6 +3,8 @@ package example;
 public class Hero {
 	String name;
 	private int hp;
+	static int money;
+	
 	public void attack(Matango m) {
 		System.out.println(this.name + "の攻撃！");
 		m.hp-= 5;
